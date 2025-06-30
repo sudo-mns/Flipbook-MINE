@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const baseHeight = 900;
     let currentZoom = 1;
     const zoomStep = 0.1;
-    const maxZoom = 3;
-    const minZoom = 0.5;
+    const maxZoom = 1.8;
+    const minZoom = 0.8;
 
     totalPagesEl.textContent = lastPageNum;
 
