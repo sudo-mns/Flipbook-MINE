@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Flipbook Viewer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="flipbook-container">
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <button id="zoom-in" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+        <button id="zoom-out" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+        <button id="zoom-fit" title="Fit to Screen"><i class="fas fa-expand-alt"></i></button>
+        <div class="zoom-level">100%</div>
+      </div>
+      <div class="toolbar-center">
+        <button id="first-page" title="First Page"><i class="fas fa-fast-backward"></i></button>
+        <button id="prev-page" title="Previous Page"><i class="fas fa-chevron-left"></i></button>
+        <div class="page-indicator">
+          <span id="current-page">1</span> / <span id="total-pages">0</span>
+        </div>
+        <button id="next-page" title="Next Page"><i class="fas fa-chevron-right"></i></button>
+        <button id="last-page" title="Last Page"><i class="fas fa-fast-forward"></i></button>
+      </div>
+      <div class="toolbar-right">
+        <button id="fullscreen-toggle" title="Fullscreen"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+
+    <div class="book-container">
+      <div class="flipbook-scroll-wrapper">
+        <div class="flipbook-zoom-container">
+          <div id="flipbook"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/turn.js"></script>
+  <script src="js/flipbook.js"></script>
+</body>
+</html>
